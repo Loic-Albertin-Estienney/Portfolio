@@ -1,0 +1,254 @@
+
+:root {
+    --bg-main: rgba(33, 24, 42, 0.95);
+    --bg-second: #5d4378;
+    --bg-third: #6a5acd;
+    --bg-footer: #111;
+    --text-main: #D3D3FF;
+    --text-link: #9966cc;
+
+}
+
+.theme-blue {
+    --bg-main: rgba(8, 20, 36, 0.95);
+    --bg-second: #112240;
+    --bg-third:  #87CEEB;
+    --bg-footer: #020c1b;
+    --text-main: #adc7ed;
+    --text-link: #9ecbff;
+}
+
+.theme-green {
+    --bg-main: rgba(18, 30, 24, 0.95);
+    --bg-second: #1e2d24;
+    --bg-third: #4cff88;
+    --bg-footer: #0a120d;
+    --text-main: #9dc6b0;
+    --text-link: #64ffda;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 85%;
+    margin: 30px auto 25px auto;
+    padding: 20px 10px;
+
+
+    background-color: var(--bg-main);
+    border-radius: 30px;
+
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: var(--text-main);
+
+    font-size: 2em;
+    padding: 20px 80px;
+
+    background-color: var(--bg-second);
+    border-radius: 15px;
+
+    transition: all 0.2s ease;
+    font-weight: bold;
+    text-align: center;
+}
+
+.glowy {
+    background-color: var(--bg-third);
+
+    box-shadow: 0 0 8px var(--bg-third),
+                0 0 16px var(--bg-third),
+                0 0 48px var(--bg-third),
+                0 0 96px var(--bg-third);
+
+    transform: scale(1.1);
+}
+
+
+
+
+.project {
+    margin-bottom: 15px;
+
+}
+
+.collapsible {
+    transition: background-color 0.5s ease;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--bg-second);
+    color: inherit;
+    cursor: pointer;
+
+    padding: 18px;
+    width: 100%;
+    border: none;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    border-radius: 12px;
+}
+
+.collapsible.active {
+    background-color: var(--bg-third);
+}
+
+.collapsible.active .arrow {
+    transform: rotate(180deg);
+}
+
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+
+    background-color: var(--bg-second);
+
+    border-radius: 0 0 15px 15px;
+    margin-top: -10px;
+    padding: 0 20px;
+
+}
+
+.content.open {
+    padding: 20px;
+}
+
+.overview {
+    display: flex;
+    gap: 20px;
+
+}
+
+.text {
+    flex: 1;
+}
+
+
+.image img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+video {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 720px;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-main);
+
+    background-image: url("../../assets/images/ultraviolet-fractal-seamless-background.jpg");
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    flex: 1;
+}
+
+.card {
+    background-color: var(--bg-main);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+
+.flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer {
+    background-color: var(--bg-footer);
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 2px solid var(--bg-second);
+}
+
+a {
+    color: var(--text-link);
+}
+
+
+.welcome-body {
+    background-image: url("../../assets/images/ultraviolet-fractal-seamless-background.jpg");
+}
+
+.welcome-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    transition: transform 0.2s ease;
+    will-change: transform;
+}
+
+.welcome-screen.dragging {
+    opacity: 0.95;
+}
+
+.welcome-content {
+    font-size: 22px;
+    background-color: var(--bg-main);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 500px;
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+    padding: 40px
+}
+
+.welcome-icon {
+    width: 80px;
+}
+
+.swipe-text {
+    position: absolute;
+    bottom: 30px;
+    opacity: 0.7;
+}
+
+.theme-switcher {
+    margin-top: 15px;
+}
+
+.theme-switcher button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

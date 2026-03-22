@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loic Albertin--Estienney</title>
+    <link rel="icon" href="../../assets/images/icon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="home.html" class="nav-btn">Home</a>
+        <a href="projects.html" class="nav-btn">Projects</a>
+        <a href="education.html" class="nav-btn">Education</a>
+        <a href="contact.html" class="nav-btn">Contact</a>
+        <a href="https://github.com/Loic-Albertin-Estienney" target="_blank" class="nav-btn">GitHub</a>
+    </nav>
+    <script src="../javascript/nav.js"></script>
+</header>
+
+<main class="container">
+
+    <section class="card">
+        <h1>Projects</h1>
+        <br>
+
+        <div class="project">
+            <button class="collapsible">
+                <span>Global Game Jam 2025 (Halifax)</span>
+                <span class="arrow">▼</span>
+            </button>
+
+            <div class="content">
+                <div class="overview">
+                    <div class="text">
+                        <h2>Overview</h2>
+                        <p>
+                            In 2025, I attended the Global Game Jam in Halifax as part of a five-person team.
+                            My role focused on developing the core gameplay mechanics.
+                            The event took place under a 2-day deadline.
+                        </p>
+
+                        <p>
+                            Result:
+                            <a href="https://sihayalt.itch.io/the-last-bubble" target="_blank">
+                                The Last Bubble
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="image">
+                        <img src="../../assets/images/LastBubble.png" alt="Game Image">
+                    </div>
+                </div>
+
+                <h2>Game Demo</h2>
+                <video controls>
+                    <source src="../../assets/video/TheLastBubble.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <script src="../javascript/projects.js"></script>
+</main>
+
+<footer class="footer">
+    <h2>Background Music</h2>
+    <audio controls autoplay loop>
+        <source src="../../assets/audio/daynigthmorning-space-discoveries-no-copyright-music-465083.mp3" type="audio/mpeg">
+    </audio>
+
+    <p>
+        Music by
+        <a href="https://pixabay.com/users/daynigthmorning-30744553/">Den</a>
+        from
+        <a href="https://pixabay.com/music/">Pixabay</a>
+    </p>
+
+    <div class="theme-switcher">
+        <button onclick="setTheme('default')">Purple</button>
+        <button onclick="setTheme('theme-blue')">Blue</button>
+        <button onclick="setTheme('theme-green')">Green</button>
+    </div>
+    <script src="../javascript/themeSwitcher.js"></script>
+
+</footer>
+
+</body>
+</html>
