@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loic Albertin--Estienney</title>
+    <link rel="icon" href="../../assets/images/icon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+
+    <div class="nav-top">
+        <button class="menu-toggle">☰</button>
+        <span class="current-page">Home</span>
+    </div>
+
+    <nav class="navbar">
+        <a href="home.html" class="nav-btn">Home</a>
+        <a href="projects.html" class="nav-btn">Projects</a>
+        <a href="education.html" class="nav-btn">Education</a>
+        <a href="contact.html" class="nav-btn">Contact</a>
+        <a href="https://github.com/Loic-Albertin-Estienney" target="_blank" class="nav-btn">GitHub</a>
+    </nav>
+    <script src="../javascript/nav.js"></script>
+</header>
+
+<main>
+
+    <section class="card flex">
+        <div class="text">
+            <h1>Welcome to My Portfolio</h1>
+            <p>
+                Hello! My name is Loic Albertin. I am an aspiring software developer studying computer science.
+                I am particularly interested in programming, game development, procedural systems, and performance optimization.
+                This website showcases my skills, education, and projects.
+            </p>
+        </div>
+
+        <div class="image">
+            <img src="../../assets/images/loic.jpg" alt="Profile">
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>About Me</h2>
+
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+        </ul>
+
+        <h3>Programming Interests</h3>
+        <ul>
+            <li>Game Development
+                <ul>
+                    <li>Game Engines</li>
+                    <li>Physics Systems</li>
+                    <li>Shaders</li>
+                </ul>
+            </li>
+            <li>Systems Programming
+                <ul>
+                    <li>Memory Management</li>
+                    <li>Performance Optimization</li>
+                    <li>Mathematical Algorithms</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Planned Project</h3>
+        <p>
+            I plan to build a voxel-based 3D engine to learn more about rendering and GPU usage.
+            One of my biggest inspirations is the YouTuber Douglas:
+        </p>
+
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/IFUj53VwYvU" allowfullscreen></iframe>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <h2>Background Music</h2>
+    <audio controls autoplay loop>
+        <source src="../../assets/audio/daynigthmorning-space-discoveries-no-copyright-music-465083.mp3" type="audio/mpeg">
+    </audio>
+
+    <p>
+        Music by
+        <a href="https://pixabay.com/users/daynigthmorning-30744553/">Den</a>
+        from
+        <a href="https://pixabay.com/music/">Pixabay</a>
+    </p>
+
+    <div class="theme-switcher">
+        <button onclick="setTheme('default')">Purple</button>
+        <button onclick="setTheme('theme-blue')">Blue</button>
+        <button onclick="setTheme('theme-green')">Green</button>
+    </div>
+    <script src="../javascript/themeSwitcher.js"></script>
+
+</footer>
+
+</body>
+</html>
